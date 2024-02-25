@@ -1,0 +1,173 @@
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    font-size: 24px;
+}
+
+header{
+    display: flex;
+}
+
+
+header h1{
+float: left;
+color:#cc0000;
+font-size: 50px;
+margin: 0;
+}
+
+#top{
+width: 100%;
+}
+
+nav a{
+    float: right;
+    text-decoration: none;
+    padding: 10px;
+    color: #333333;
+    font-size: 32px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+
+}
+
+
+#hero{
+    width: 100%;
+    background: url(images/red-background.jpg);
+    color: white;
+
+}
+
+#hero img{
+padding: 100px;
+padding-left: 140px;
+}
+
+#hero-d{
+    float: right;
+    text-align: center;
+    padding-top: 30px;
+    padding-right: 80px;
+}
+
+#hero-d h1{
+    font-size: 50px;
+}
+
+#hero-d h2{
+    font-size: 30px;
+}
+
+#hero-d h3{
+    font-size: 30px;
+}
+
+.about{
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.about h1{
+    color: #cc0000;
+}
+
+.container{
+    width: 40%;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.about-pic{
+    display: block;
+    width: 650px;
+    height: 550px;
+}
+
+#open{
+    background: url(images/open.webp) center no-repeat;
+}
+
+#store{
+    background: url(images/new-york.png)center no-repeat;;
+}
+
+#title-1{
+    background-color: #cc0000;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+#title-1 h1{
+    color: white;
+}
+
+#row{
+    box-sizing: border-box;
+}
+
+#column{
+        float: left;
+        width: 19%;
+        height: 500px;
+        padding: 7px;
+        text-align: center;
+}
+
+#red{
+    background: #cc0000;
+    height: 100px;
+    
+}
+
+#red h1{
+    font-size: 25px;
+    color: white;
+}
+
+#price{
+    color: #cc0000;
+    font: 20px;
+    border: solid black 1pt;
+}
+
+.column-pic{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#GTC{
+    background: url(images/GTC.jpg)center no-repeat;
+}
+
+#WT{
+    background: url(images/WT.jpg)center no-repeat;
+}
+
+#CCWT{
+    background: url(images/CCWT.jpg)center no-repeat;
+}
+
+#CB{
+    background: url(images/CB.jpg)center no-repeat;
+}
+
+#PFR{
+    background: url(images/PFR.jpg)center no-repeat;
+}
+
+
