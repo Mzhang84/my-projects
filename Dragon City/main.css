@@ -31,7 +31,7 @@ nav a{
     text-decoration: none;
     padding: 10px;
     color: #333333;
-    font-size: 32px;
+    font-size: 30px;
 }
 
 nav a:hover{
@@ -48,14 +48,13 @@ nav a:hover{
 }
 
 #hero img{
-padding: 100px;
+padding: 70px;
 padding-left: 140px;
 }
 
 #hero-d{
     float: right;
     text-align: center;
-    padding-top: 30px;
     padding-right: 80px;
 }
 
@@ -63,26 +62,22 @@ padding-left: 140px;
     font-size: 50px;
 }
 
-#hero-d h2{
+#hero-d h2, h3{
     font-size: 30px;
 }
 
-#hero-d h3{
-    font-size: 30px;
-}
+
 
 .about{
     text-align: center;
     margin-bottom: 0px;
+    width: 100%;
+    margin-top: 10px;
+
 }
 
 .about h1{
     color: #cc0000;
-}
-
-.container{
-    width: 40%;
-    margin: auto;
 }
 
 .flex{
@@ -90,19 +85,11 @@ padding-left: 140px;
     justify-content: center;
 }
 
-.about-pic{
-    display: block;
-    width: 650px;
-    height: 550px;
+section.container.flex {
+    margin-top: 10px;
 }
 
-#open{
-    background: url(images/open.webp) center no-repeat;
-}
 
-#store{
-    background: url(images/new-york.png)center no-repeat;;
-}
 
 #title-1{
     background-color: #cc0000;
@@ -122,7 +109,7 @@ padding-left: 140px;
 #column{
         float: left;
         width: 19%;
-        height: 500px;
+        height: 400px;
         padding: 7px;
         text-align: center;
 }
@@ -142,6 +129,7 @@ padding-left: 140px;
     color: #cc0000;
     font: 20px;
     border: solid black 1pt;
+    height: 120px;
 }
 
 .column-pic{
@@ -150,24 +138,299 @@ padding-left: 140px;
     display: block;
 }
 
-#GTC{
-    background: url(images/GTC.jpg)center no-repeat;
+#GTC{background: url(images/GTC.jpg)center no-repeat;}
+#WT{background: url(images/WT.jpg)center no-repeat;}
+#CCWT{background: url(images/CCWT.jpg)center no-repeat;}
+#CB{background: url(images/CB.jpg)center no-repeat;}
+#PFR{background: url(images/PFR.jpg)center no-repeat;}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    text-align: center;
+    column-gap: 100px;
 }
 
-#WT{
-    background: url(images/WT.jpg)center no-repeat;
+.grid-container-1{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    text-align: center;
 }
 
-#CCWT{
-    background: url(images/CCWT.jpg)center no-repeat;
+.grid-item{
+    text-align: center;
 }
 
-#CB{
-    background: url(images/CB.jpg)center no-repeat;
+.grid-item h1{
+    font-size: 50px;
 }
 
-#PFR{
-    background: url(images/PFR.jpg)center no-repeat;
+.grid-item span{
+    color: #cc0000;
 }
+
+
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+.numbertext{
+    background: black;
+    color: white;
+    width: 10%;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.text {
+    color: black;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+  }
+.mySlides {
+    display: none;
+}
+.slideshow-container img {
+    vertical-align: middle;
+    height: 650px;
+}
+
+.active {
+    background-color: #717171;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  .grid-item h1{
+    color: #cc0000;
+    font-size: 40px;
+  }
+
+  .grid-item h3{
+    font-size: 20px;
+  }
+
+  .grid-item p{
+    font-size: 20px;
+  }
+
+  #hot{
+    background-color: #cc0000;
+    color: white;
+  }
+
+  .container{
+    width: 100%;
+    display: flex;
+  }
+
+  .item-1{
+    width: 50%;
+    float: left;
+    display: flex;
+  }
+
+  .item-2{
+    width: 50%;
+    float: left;
+    padding: 0px;
+  }
+
+  .item-2 img{
+    margin-left: 20px;
+    height: 300px;
+    width: 300px;
+  }
+
+  .item-2 h1{
+    font-size: 45px;
+  }
+
+  .item-2 p{
+    font-size: 25px;
+  }
+  
+
+@media screen and (max-width: 1416px) {
+    #column{
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 1210px) {
+    .item-2 h1{
+        font-size: 40px;
+    }
+    .item-2 p{
+        font-size: 20px;
+    }
+    .item-2 img{
+        margin-left: 0px;
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 1016px) {
+    #column{
+        width: 23%;
+        padding: 2px;
+        margin-bottom: 23%;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    #column{
+        margin-bottom: 30%;
+    }
+}
+
+
+@media screen and (max-width: 946px) {
+    #hero img{
+        padding-left: 130px;
+    }
+
+    #hero-d{
+        padding-right: 40px;
+    }
+
+    .item-2 h1{
+        font-size: 35px;
+    }
+    .item-2 p{
+        font-size: 15px;
+    }
+    .item-2 img{
+        margin-left: 0px;
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+@media screen and (max-width: 896px) {
+
+    #hero img{
+        padding-left: 100px;
+    }
+
+    #hero-d{
+        padding-right: 20px;
+    }
+    .slideshow-container img {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    
+    .grid-container-1{
+        grid-template-columns: auto;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #hero img{
+        padding-left: 50px;
+    }
+    #hero-d{
+        padding-right: 10px;
+    }
+    #red h1{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #hero img{
+        padding: 70px 10px;
+    }
+    #hero-d{
+        padding-right: 5px;
+    }
+    #column{
+        width: 32%;
+        margin-bottom: 42%;
+    }
+    .slideshow-container img {
+        height: 450px;
+    }
+    
+    .container{
+        flex-direction: column;
+    }
+
+    .item-1{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 610px) {
+    #column{
+        width: 48%;
+        margin-bottom: 42%;
+    }
+    .slideshow-container img {
+        height: 400px;
+    }
+
+    .grid-container{
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header h1{
+        font-size: 40px;
+    }
+
+    header a{
+        font-size: 20px;
+    }
+    #column{
+        margin-bottom: 47%;
+    }
+    .slideshow-container img {
+        height: 325px;
+    }
+    .numbertext{
+        font-size: 16px;
+    }
+
+    .grid-item h1{
+        font-size: 37px;
+      }
+    
+      .grid-item h3{
+        font-size: 17px;
+      }
+    
+      .grid-item p{
+        font-size: 17px;
+      }
+}
+
+
 
 
